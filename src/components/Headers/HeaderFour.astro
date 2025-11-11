@@ -1,0 +1,64 @@
+---
+import FacebookIcon from "/src/assets/icons/facebook.svg";
+import InstagramIcon from "/src/assets/icons/instagram-circle.svg";
+---
+
+<!-- TOP HEADER -->
+<div class="w-full bg-gray-200 text-sm">
+  <div class="container mx-auto h-10 flex justify-between items-center">
+    <!-- Lado izquierdo -->
+    <div class="flex items-center gap-4">
+      <a href="#" class="text-gray-600">📞 (33) 1234 5678</a>
+      <a href="" class="text-gray-600">✉️ info@ejemplo.com</a>
+    </div>
+
+    <!-- Lado derecho (opcional) -->
+    <div class="flex items-center gap-4">
+      <a href="#" class="text-gray-600 hover:text-blue-500 transition">
+        <FacebookIcon class="w-5 h-5 fill-current" />
+      </a>
+      <a href="#" class="text-gray-600 hover:text-indigo-600 transition">
+        <InstagramIcon class="w-5 h-5 fill-current" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER PRINCIPAL (tu Header 3) -->
+<header class="w-full bg-gray-100 shadow-md">
+  <div class="container mx-auto h-16 flex justify-between items-center">
+    <a
+      href="/"
+      class="block bg-gray-300 text-2xl font-bold py-1 px-4 rounded-sm"
+    >
+      Logotipo
+    </a>
+
+    <nav>
+      <ul
+        class="flex gap-6 items-baseline [&>li>a]:text-lg [&>li>a]:font-medium [&>li>a]:block [&>li>a]:py-2 [&>li>a]:px-4 [&>li>a]:rounded-sm [&>li>a:hover]:bg-gray-200 rounded-md transition"
+      >
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/about">Acerca de</a></li>
+        <li class="relative group">
+          <a href="/services">Servicios</a>
+          <ul
+            class="absolute left-0 top-full z-50 bg-white/50 backdrop-blur-sm shadow-lg rounded-md p-4 space-y-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 [&>li>a]:block [&>li>a]:py-0.5 [&>li>a]:px-3 [&>li>a]:rounded-sm [&>li>a:hover]:bg-gray-200 [&>li>a]:text-md [&>li>a]:font-medium"
+          >
+            <li><a href="/services/design">Diseño</a></li>
+            <li><a href="/services/development">Desarrollo</a></li>
+            <li><a href="/services/marketing">Marketing</a></li>
+          </ul>
+        </li>
+        <li><a href="/contact">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <a
+      href="#"
+      class="block bg-green-300 py-2 px-4 rounded-md font-medium hover:scale-95 transition transform ease-in-out duration-200"
+    >
+      Enviar WhatsApp
+    </a>
+  </div>
+</header>

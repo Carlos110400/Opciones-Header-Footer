@@ -1,0 +1,13 @@
+---
+import HeaderOne from "../components/Headers/HeaderOne.astro";
+import HeaderTwo from "../components/Headers/HeaderTwo.astro";
+import HeaderThree from "../components/Headers/HeaderThree.astro";
+import HeaderFour from "../components/Headers/HeaderFour.astro";
+
+const { varianthHeader = "one" } = Astro.props;
+---
+
+{varianthHeader === "one" && <HeaderOne />}
+{varianthHeader === "two" && <HeaderTwo />}
+{varianthHeader === "three" && <HeaderThree />}
+{varianthHeader === "four" && <HeaderFour />}
